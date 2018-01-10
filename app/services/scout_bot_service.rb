@@ -16,7 +16,8 @@ class ScoutBotService
   attr_reader :conn
 
   def initialize
-    @conn ||= Faraday.new(url: "https://scoutbot-api.herokuapp.com/api/v1/")
+    # @conn ||= Faraday.new(url: "https://scoutbot-api.herokuapp.com/api/v1/")
+    @conn ||= Faraday.new(url: "http://localhost:3000/api/v1/")
   end
 
 end

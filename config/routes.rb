@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'main#index'
 
+  get '/auth/google_oauth2/callback', to: 'sessions#create'
+
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
   delete "/logout", to: 'session#destroy'

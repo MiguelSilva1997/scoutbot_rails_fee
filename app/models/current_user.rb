@@ -4,12 +4,14 @@ class CurrentUser
               :last_name,
               :email,
               :phone_number,
+              :role,
               :scout_profile,
               :player_profile,
               :teams
 
   def initialize(data)
     @id = data["id"]
+    @role = data["role"]
     @first_name = data["first_name"]
     @last_name = data["last_name"]
     @email = data["email"]
