@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
   root 'main#index'
+
+  get "/login", to: "sessions#new"
+  post "/login", to: "sessions#create"
+  delete "/logout", to: 'session#destroy'
+
+  resources :users
+
+  resources :player_profiles
+  resources :scout_profiles
+  resources :team_profiles
 end

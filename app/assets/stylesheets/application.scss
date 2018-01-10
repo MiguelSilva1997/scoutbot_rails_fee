@@ -11,8 +11,40 @@
  * It is generally better to create a new file per style scope.
  *
  */
- @import "bootstrap";
 
+ html {
+   height: 100%;
+ }
+
+ body {
+   height: 100%;
+ }
+@import "bootstrap";
+
+.top-players {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.top-players td, .top-players th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.top-players tr:nth-child(even){background-color: #f2f2f2;}
+
+.top-players tr:hover {background-color: #ddd;}
+
+.top-players th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+// Nav Bar
  ul {
     list-style-type: none;
     margin: 0;
@@ -45,7 +77,14 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
 }
+// nav bar
 
-.table .table-sm {
-  width: 10%;
+//center component
+.center {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
+// center
