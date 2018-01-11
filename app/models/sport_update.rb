@@ -12,6 +12,6 @@ class SportUpdate
     @title = data['title']
     @description = data['description']
     @url = data['url']
-    @image = data['"urlToImage"']
+    @image = data['urlToImage']
   end
 end

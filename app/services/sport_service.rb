@@ -1,7 +1,7 @@
 class SportService
 
   def get_current_news
-    response = @conn.get("top-headlines?q=league&apiKey=#{ENV['STORY_KEY']}")
+    response = @conn.get("top-headlines?q=football&apiKey=#{ENV['STORY_KEY']}")
     JSON.parse(response.body)
   end
 
