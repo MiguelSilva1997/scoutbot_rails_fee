@@ -22,6 +22,11 @@ class ScoutBot
     raw_data['articles'].map{ |data| SportUpdate.new(data)}
   end
 
+  def update_user(params)
+    raw_data = scoutbot_service.update_current_user(params)
+    CurrentUser.new(raw_data)
+  end
+
   private
 
   attr_reader :filter

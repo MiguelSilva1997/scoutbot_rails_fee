@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+          <h1>Edit Profile</h1>
+          <p>Explain..</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+          <form action="/users/<%= current_user.id %>" method="post" width="50%">
+            <input type="hidden" name="_method" value="patch" />
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="user[first_name]" placeholder="Your name.."  class="form-control">
+          <input type="submit" value="Submit" class="btn btn-success">
+         </form>
+
+          <form action="/users/<%= current_user.id %>" method="post" width="50%">
+            <input type="hidden" name="_method" value="patch" />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="user[last_name]" placeholder="Your last name.." class="form-control">
+
+           <input type="submit" value="Submit" class="btn btn-success">
+          </form>
+
+          <form action="/users/<%= current_user.id %>" method="post" width="50%">
+            <input type="hidden" name="_method" value="patch" />
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="user[phone_number]" placeholder="Phone number.." class="form-control">
+            <input type="submit" value="Submit" class="btn btn-success">
+          </form>
+
+          <form action="/users/<%= current_user.id %>" method="post" width="50%">
+            <input type="hidden" name="_method" value="patch" />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="user[email]" placeholder="Email.." class="form-control">
+            <input type="submit" value="Submit" class="btn btn-success">
+          </form>
+
+          <form action="/users/<%= current_user.id %>" method="post" width="50%">
+            <input type="hidden" name="_method" value="patch" />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user[password]" placeholder="Password.." class="form-control">
+
+            <input type="submit" value="Submit" class="btn btn-success">
+          </form>
+        </div>
+        <div class="col-md-8">
+          <div class="thumbnail" style="margin-top: 20px;">
+            <img src="https://image.ibb.co/f9wVCR/undraw_create_f05x.png" style="width:80%;height:70%;">
+          </div>
+        </div>
+    </div>
+</div>
