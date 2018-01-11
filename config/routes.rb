@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   resources :users
 
+  resources :news, only: [:index]
+
   resources :player_profiles
   resources :scout_profiles
   resources :team_profiles

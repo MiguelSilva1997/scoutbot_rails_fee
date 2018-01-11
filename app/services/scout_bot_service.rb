@@ -15,7 +15,6 @@ class ScoutBotService
     JSON.parse(response.body)
   end
 
-
   private
 
   attr_reader :conn
