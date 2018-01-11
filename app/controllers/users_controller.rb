@@ -8,15 +8,15 @@ class UsersController < ApplicationController
   def create
     @user = Login.new.create_user(user_params)
     session[:user] = @user
-    if @user.role == "player"
-      redirect_to player_profiles_path
-    elsif !@user.role == "scout"
-      redirect_to scout_profiles_path
-    elsif !@user.role == "team"
-      redirect_to team_profiles_path
+    if @user
+      redirect_to user_path(@user.id)
     else
       redirect_to admin_dashboard
     end
+  end
+
+  def show
+    
   end
 
   private

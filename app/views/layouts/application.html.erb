@@ -26,10 +26,14 @@
 
         <ul class="nav navbar-nav hidden-xs">
           <li>
-            <a href="/">Home</a>
+            <% if current_user %>
+            <a href="/users/<%= current_user.id %>">Home</a>
+            <% end %>
           </li>
           <li>
+            <% if current_user %>
             <a href="/player_profiles">Profile</a>
+            <% end %>
           </li>
           <li>
             <a data-toggle="modal" href="#msgModal">Scouts</a>

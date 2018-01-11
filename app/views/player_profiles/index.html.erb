@@ -1,1 +1,32 @@
-<%= @current_user.first_name %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+          <div class="panel panel-default panel-profile">
+            <div class="panel-heading" style="background-image: url(https://image.ibb.co/cyRpp6/Miguel_Silva.jpg);"></div>
+              <div class="panel-body text-center">
+                <img class="panel-profile-img" src="../assets/img/avatar-fat.jpg">
+                <h5 class="panel-title">Jacob Thornton</h5>
+                <p class="m-b-md">Big belly rude boy, million dollar hustler. Unemployed.</p>
+                <button class="btn btn-primary-outline btn-sm">
+                  <span class="icon icon-add-user"></span> Follow
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+          <h3>Club: <%= player_profile.club %></h3>
+          <h3>Height: <%= player_profile.height %></h3>
+          <h3>Weight: <%= player_profile.weight %></h3>
+          <h3>Dominant Foot: <%= player_profile.dominant_foot %></h3>
+          <h3>Age: <%= player_profile.age %></h3>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Country: <%= player_profile.country %></h3>
+          <h3>Primary Position: <%= player_profile.primary_position %></h3>
+          <h3>Secondary Position:<%= player_profile.secondary_position %></h3>
+          <h3>Rating: <%= player_profile.rating %></h3>
+        </div>
+    </div>
+</div>

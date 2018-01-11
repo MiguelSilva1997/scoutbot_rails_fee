@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+          <div class="profile-header text-center" style="background-image: url(https://image.ibb.co/iydS96/birds_eye_view_of_illuminated_stadium_with_green_soccer_field_ready_for_match_rkz61i0ur_F0000.png); ">
+            <div class="container-fluid">
+              <div class="container-inner">
+                <img class="img-circle media-object" src="https://image.ibb.co/bXxgK6/Stadium.jpg">
+                <h3 class="profile-header-user"> <%= @current_user.first_name %> <%= @current_user.last_name %></h3>
+                <h3 class="profile-header-user"> <%= @current_user.email %></h3>
+                <h4 class="profile-header-user"> <%= @current_user.phone_number %></h4>
+                <p class="profile-header-bio">I wish i was a little bit taller, wish i was a baller, wish i had a girl… also.</p>
+              </div>
+            </div>
+            <nav class="profile-header-nav">
+              <ul class="nav nav-tabs">
+                <li><a href="<%= @current_user.first_name %>/edit">Edit Profile</a></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<br>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Following</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Rating</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Follower</h3>
+            </div>
+            <div class="panel-body">
+              Panel content
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
