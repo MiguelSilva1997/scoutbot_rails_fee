@@ -32,7 +32,13 @@
           </li>
           <li>
             <% if current_user %>
-            <a href="/player_profiles">Profile</a>
+              <% if current_user.role == 'player'  %>
+                  <a href="/player_profiles">Profile</a>
+                <% elsif current_user.role == 'scout'%>
+                  <a href="/scout_profiles">Profile</a>
+                <% else %>
+                  <a href="/team_profiles">Profile</a>
+              <% end %>
             <% end %>
           </li>
           <li>
@@ -82,9 +88,3 @@
     <%= yield %>
   </body>
 </html>
-<!-- <ul>
-  <li><a class="active" href="/">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Higlights</a></li>
-  <li style="float:right"><a href="/login">Login</a></li>
-</ul> -->

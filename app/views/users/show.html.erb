@@ -41,10 +41,18 @@
         <div class="col-md-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Rating</h3>
+              <% if current_user.role == 'player' %>
+                <h3 class="panel-title">Rating</h3>
+              <% else %>
+                <h3 class="panel-title">Reputation</h3>
+              <% end %>
             </div>
             <div class="panel-body">
-              Panel content
+              <% if current_user.role == 'player' %>
+                <p class="panel-title">Rating</p>
+              <% else %>
+                <p class="panel-title">Reputation</p>
+              <% end %>
             </div>
           </div>
         </div>
