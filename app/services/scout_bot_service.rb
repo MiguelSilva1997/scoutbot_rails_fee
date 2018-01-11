@@ -10,6 +10,11 @@ class ScoutBotService
     JSON.parse(response.body)
   end
 
+  def create_current_user(params)
+    response = @conn.post("users", params)
+    JSON.parse(response.body)
+  end
+
 
   private
 

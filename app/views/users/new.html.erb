@@ -1,1 +1,46 @@
-<h1>Sign Up!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+          <h1>Sign Up</h1>
+          <p>Explain..</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+          <form action="/users" method="post" width="50%">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="user[first_name]" placeholder="Your name.." class="form-control">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="user[last_name]" placeholder="Your last name.." class="form-control">
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="user[phone_number]" placeholder="Phone number.." class="form-control">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="user[email]" placeholder="Email.." class="form-control">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user[password]" placeholder="Password.." class="form-control">
+
+            <label for="role">Role</label>
+            <select class="form-control" name="user[role]">
+              <option value="0">Player</option>
+              <option value="1">Scout</option>
+              <option value="2">Team</option>
+            </select>
+            <br>
+
+            <input type="submit" value="Submit" class="btn btn-success">
+          </form>
+        </div>
+        <div class="col-md-8">
+          <div class="thumbnail" style="margin-top: 20px;">
+            <img src="https://image.ibb.co/f9wVCR/undraw_create_f05x.png" style="width:80%;height:70%;">
+          </div>
+        </div>
+    </div>
+</div>

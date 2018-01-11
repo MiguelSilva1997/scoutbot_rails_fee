@@ -9,6 +9,11 @@ class Login
     CurrentUser.new(raw_data)
   end
 
+  def create_user(params)
+    raw_data = scoutbot_service.create_current_user(params)
+    CurrentUser.new(raw_data)
+  end
+
   private
 
   attr_reader :filter

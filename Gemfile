@@ -20,7 +20,7 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
-gem 'bootstrap', '~> 4.0.0.beta3'
+# gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'jquery-rails'
 gem 'pry'
 # Use Redis adapter to run Action Cable in production
