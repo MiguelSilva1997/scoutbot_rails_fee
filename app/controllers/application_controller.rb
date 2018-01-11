@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :current_user, :player_profile, :scout_profile, :team_profile
+  before_action :current_user
 
   helper_method :current_user, :player_profile, :scout_profile, :team_profile
 
